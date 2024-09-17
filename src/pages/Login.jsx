@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button, TextField, Typography, Box, Container, CssBaseline, Avatar } from '@mui/material';
 import Logo from './imgs/logo.png'
+import { Link } from "react-router-dom";
+
 
 const LoginPage = () => {
   const handleSubmit = (event) => {
@@ -59,15 +61,20 @@ const LoginPage = () => {
               autoComplete="current-password"
               className="mb-4"
             />
-            <Button
+           
+           <Link to="/dashboard">
+           <Button
               type="submit"
               fullWidth
               variant="contained"
               className="bg-blue-500 h-12 hover:bg-blue-700 text-white py-2"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign In
+              Login
             </Button>
+           
+           </Link>
+            
           </Box>
           <h1 className='text-gray-500'>Desenvolvido por Arlei junio</h1>
         </Box>
